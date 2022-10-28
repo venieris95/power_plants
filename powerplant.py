@@ -68,7 +68,7 @@ def main():
 
     @st.cache(persist = True)
     def load_data(nrows):
-        df = pd.read_csv('data\global_power_plant_database.csv') 
+        df = pd.read_csv('global_power_plant_database.csv') 
         return df
     df = load_data(400000)
 
